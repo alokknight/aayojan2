@@ -10,7 +10,7 @@ function ForgetPassword() {
   const Navigate = useNavigate();
   const onSubmitHandler= e=>{
     e.preventDefault();
-    axios.post('/api/password/forgot', email)
+    axios.post('https://aayojanserver.onrender.com/api/password/forgot', email)
     .then(res=>{
       alert('Reset Link has been sent to your mail.')
       Navigate("/signin")

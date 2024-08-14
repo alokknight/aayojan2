@@ -24,7 +24,7 @@ function Dashboard() {
 
     console.log("Profile-",profile)
     useEffect(() => {
-        axios.get('/api/event', {
+        axios.get('https://aayojanserver.onrender.com/api/event', {
             headers: {
                 'Authorization': `Bearer ${token}`,
                 'content-type': 'application/json'

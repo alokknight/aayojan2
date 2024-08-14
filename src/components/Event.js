@@ -26,7 +26,7 @@ export default function Event({ match }) {
 
     const onSubmitHandler = e =>{
         e.preventDefault();
-        axios.post(`/api/notify/${eName}/${notifyEmail}`)
+        axios.post(`https://aayojanserver.onrender.com/api/notify/${eName}/${notifyEmail}`)
         .then(()=> alert('Event Scheduled'))
         .catch(()=> alert('Some Error Occured'))
     }

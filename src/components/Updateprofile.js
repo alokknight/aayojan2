@@ -19,7 +19,7 @@ function Updateprofile() {
 
     const onSubmitHandler = (e) =>{
         e.preventDefault();
-        axios.put(`/api/signup/update/${decode.email}`, profile, {
+        axios.put(`https://aayojanserver.onrender.com/api/signup/update/${decode.email}`, profile, {
             headers: {
                 'Authorization': `Bearer ${userToken}`,
                 'Content-Type': 'application/json'
